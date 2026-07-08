@@ -2,5 +2,6 @@
   "name": "fieldnotes",
   "image": "mcr.microsoft.com/devcontainers/python:3.13-bookworm",
   "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {}
   }
 }
