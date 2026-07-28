@@ -36,12 +36,16 @@ wheels = [
 name = "fieldnotes"
 version = "0.1.0"
 source = { virtual = "." }
-dependencies = [
+
+[package.dev-dependencies]
+dev = [
     { name = "zensical" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "zensical", specifier = ">=0.0.51" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "zensical", specifier = ">=0.0.51" }]
 
 [[package]]
 name = "jinja2"
