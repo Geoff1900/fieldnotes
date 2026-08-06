@@ -5,5 +5,6 @@
     "ghcr.io/devcontainers/features/sshd:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/va-h/devcontainers-features/uv:1": {}
-  }
+  },
+  "forwardPorts": [8000]
 }
