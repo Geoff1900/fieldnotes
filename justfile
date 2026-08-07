@@ -4,16 +4,16 @@ default:
 
 # Build the site
 build:
-    cd docs && uv run zensical build
+    cd handbook && uv run zensical build
 
 # Run the Zensical dev server
 serve:
-    cd docs && uv run zensical serve
+    cd handbook && uv run zensical serve
 
 lint-md:
     npx markdownlint-cli2
 
 lint-spelling:
-    npx cspell "docs/**/*.md"
+    npx cspell "handbook/**/*.md"
 
 lint: lint-md lint-spelling
