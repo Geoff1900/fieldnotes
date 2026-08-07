@@ -1,0 +1,6 @@
+{
+  "version": "0.2",
+  "language": "en-GB",
+  "words": ["zensical", "devcontainer", "uv", "codespaces"],
+  "ignorePaths": ["node_modules", "site", ".venv"]
+}
