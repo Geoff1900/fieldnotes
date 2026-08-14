@@ -18,7 +18,7 @@
       "bierner.markdown-mermaid",
       "redhat.vscode-yaml",
       "tamasfe.even-better-toml",
-      "nefrob.vscode-just"
+      "nefrob.vscode-just-syntax"
     ],
     "settings": {
       "editor.rulers": [80, 120]
