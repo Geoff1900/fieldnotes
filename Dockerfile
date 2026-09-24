@@ -11,5 +11,6 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --frozen --no-dev
 ENV PATH="/app/.venv/bin:$PATH"
 EXPOSE 8000
-ENTRYPOINT ["cd handbook", "uv", "run", "zensical"]
+WORKDIR handbook
+ENTRYPOINT ["uv", "run", "zensical"]
 CMD ["serve", "--dev-addr=0.0.0.0:8000"]
