@@ -1,0 +1,21 @@
+name: PR Quality Checks
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@v20
+        with:
+          globs: "handbook/**/*.md"
+      - name: Spell check
+        uses: streetsidesoftware/cspell-action@v7
+        with:
+          files: "handbook/**/*.md"
+          
